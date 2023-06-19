@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Boy Color</title>
+    <link rel="stylesheet" href="../css/consola.css">
+    <link rel="shortcut icon" href="../img/gameboy-icon-7.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    <!-- La consola se encuentra dividida en 3 divs generales el div "CONSOLA" que lo engloba todo y sus dos subdivisiones "PARTE ARRIBA" y "PARTE ABAJO" que engloban el resto de la consola -->
+        <div id="consola">
+            <div id="botonencendido"></div>
+            <!-- Aquí comienza "PARTEARRIBA", es un div que subdivirá la parte de la pantalla en el marco (que contendrá el logo y la luz de power) y la propia pantalla (que contiene únicamente la pantalla y la parte de encendido) -->
+            <div id="partearriba">
+                <!-- Las letras medio transparentes COMM entran justo encima del marco, en principio son las letras de la empresa que hizo física la consola (hay otras cómo SONY, etc...) -->
+                <div id="comm">COMM</div>
+                <!-- El marco será gradial y contendrá tanto la pantalla cómo el logo y la luz de power -->
+                <div id="marco">
+                    <div id="luzpower">
+                        <div id="luz"></div>
+                        <div id="parentesis">)))</div>
+                        <div id="power">POWER</div>
+                    </div>
+                    <div id="pantalla"></div>
+                    <div id="logogbc"></div>
+                </div>
+            </div>
+            <!-- La parte del medio hasta abajo de la consola se encuentra dividida en 3 partes que engloban el logo, los botones de juego y la parte baja que contiene los botones select, start y el altavoz -->
+            <div id="parteabajo">
+                <div id="logonintendo"></div>
+                <div id="botonesdejuego">
+                    <div id="cruceta">
+                        <div></div>
+                        <div><button class="botonescruceta" id="botonarriba">^</button></div>
+                        <div></div>
+                        <div><button class="botonescruceta" id>&#60</button></div>
+                        <div class="botoncentral"></div>
+                        <div><button class="botonescruceta">&#62</button></div>
+                        <div></div>
+                        <div><button class="botonescruceta"></button></div>
+                        <div></div>
+                    </div>
+                    <div id="botonesayb">
+                        <div id="botona"><button>A</button></div>
+                        <div id="botonb"><button>B</button></div>
+                    </div>
+                </div>
+                <div id="finalconsola">
+                    <div id="botonesselectystart">
+                        <div id="select"><button></button></div>
+                        <div id="start"><button></button></div>
+                    </div>
+                    <div id="altavoz">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
